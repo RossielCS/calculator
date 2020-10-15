@@ -1,68 +1,103 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Calculator
 
-## Available Scripts
+> The main objective of this repo is to learn how to build a simple React application.<br />
+Is a real-world project for a fictional company based in France.
 
-In the project directory, you can run:
+The company is called Math-magicians and requested a simple product that would assist them with their calculations.<br /> 
 
-### `yarn start`
+The app design:<br />
+<img src="src\assets\images\calculator-model.png" alt="screenshot" width="500px"/>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+An important thing to notice is that they have asked for a product that is not just fully-functional, but also beautiful and user-friendly.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Screenshot
+![screenshot](./app_screenshot.png)
+Additional description about the project and its features.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## :hammer:  Built With
 
-### `yarn build`
+- JavaScript,
+- NPM,
+- Yarn,
+- React,
+- Visual Studio Code
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## :earth_americas: Live Demo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Live Demo Link](https://livedemo.com)
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## :computer: Getting Started
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To get a local copy up and running follow these simple example steps.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Prerequisites
+Before you continue, be sure that you have installed:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- A Git GUI.
+- [NPM](https://www.npmjs.com/get-npm).
+- [Nodejs](https://nodejs.org/en/).
+- An Integrated Development Environment.
+- A web browser.
 
-## Learn More
+### Usage
+To run the project:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Clone the repository with Git.
+- Open it with your IDE.
+- Install the dependencies.<br /> 
+`npm install`
+- Run the app in development mode.<br />
+`npm run start`<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.<br />
+The page will reload if you make edits.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Run tests
 
-### Code Splitting
+### :rocket: Deployment
+Instructions from [Heroku Buildpack](https://github.com/mars/create-react-app-buildpack).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- Generate a react app.<br />
+*replace $APP_NAME with the name for your unique app*.<br />
+`npx create-react-app@3.x $APP_NAME`
 
-### Analyzing the Bundle Size
+- Create the heroku app.<br />
+*replace $APP_NAME with the name for your unique app*.<br />
+`heroku create $APP_NAME --buildpack mars/create-react-app`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- Deploy.<br />
+`git push heroku master`
 
-### Making a Progressive Web App
+- Visit the app's public URL in your browser.<br />
+`heroku open`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## :gem:  Features
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## :woman:  Author
 
-### Deployment
+**Rossiel Carranza**
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+- Github: [@RossielCS](https://github.com/RossielCS)
+- LinkedIn: [Rossiel Carranza](https://www.linkedin.com/in/rossiel-carranza/)
 
-### `yarn build` fails to minify
+## 🤝 Contributing
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](issues/).
+
+1. Fork this repository.
+2. Create a branch: git checkout -b <branch_name>
+3. Make your changes and commit them: git commit -m '<commit_message>'
+4. Push to the original branch: git push origin <project_name>/<location>
+5. Create the pull request.
+
+## Show your support
+
+Give an ⭐️ if you like this project!
+
+## 📝  License
+
+This project is [MIT](lic.url) licensed.
