@@ -1,3 +1,4 @@
+@import 'reset';
 @import 'variables';
 @import 'mixins';
 
@@ -18,4 +19,22 @@
   color: #fff;
   font-size: 50px;
   background-color: $display-color;
+}
+
+.button-panel {
+  @include flex(column, flex-end, center);
+
+  .board-row {
+    height: 100px;
+    border-bottom: 1px solid $button-border;
+
+    .button {
+      height: 100%;
+      width: calc(700px * 0.25);
+      font-size: 20px;
+      font-weight: 700;
+      border: 1px solid $button-panel-color;
+      background-color: $button-calc;
+    }
+  }
 }
