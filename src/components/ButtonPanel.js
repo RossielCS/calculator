@@ -11,7 +11,7 @@ const buttonNames = [
 ];
 
 const ButtonPanel = () => (
-  <div>
+  <div className="button-panel">
     {buttonNames.map(group => (
       <div key={uuidv4()} className="board-row">
         {group.map(element => (

@@ -1,3 +1,30 @@
+$display-color: #858694;
+$button-color: #e0e0e0;
+$button-border: #c2c2c2;
+$button-calc: #f5913e;
+$symbols-color: #e0e0e0;
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .board-row {
   background-color: red;
+}
+
+.calculator {
+  width: 700px;
+}
+
+.display {
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+  font-size: 50px;
+  background-color: $display-color;
 }
