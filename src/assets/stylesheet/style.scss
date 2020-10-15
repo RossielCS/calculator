@@ -1,29 +1,20 @@
-$display-color: #858694;
-$button-color: #e0e0e0;
-$button-border: #c2c2c2;
-$button-calc: #f5913e;
-$symbols-color: #e0e0e0;
+@import 'variables';
+@import 'mixins';
 
-@mixin flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.board-row {
-  background-color: red;
-}
-
-.calculator {
+.app {
   width: 700px;
+  margin: auto;
+
+  @include flex(column, center, center);
 }
 
 .display {
   height: 100px;
+  width: 100%;
   padding: 10px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+
+  @include flex(row, flex-end, center);
+
   color: #fff;
   font-size: 50px;
   background-color: $display-color;
