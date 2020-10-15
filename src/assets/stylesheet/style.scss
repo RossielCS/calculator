@@ -17,6 +17,7 @@
   @include flex(row, flex-end, center);
 
   color: #fff;
+  font-weight: bold;
   font-size: 50px;
   background-color: $display-color;
 }
@@ -26,15 +27,30 @@
 
   .board-row {
     height: 100px;
+    width: 700px;
     border-bottom: 1px solid $button-border;
 
     .button {
       height: 100%;
-      width: calc(700px * 0.25);
       font-size: 20px;
       font-weight: 700;
       border: 1px solid $button-panel-color;
-      background-color: $button-calc;
+    }
+
+    .small {
+      width: 25%;
+    }
+
+    .large {
+      width: 50%;
+    }
+
+    .orange {
+      background-color: $button-orange;
+    }
+
+    .gray {
+      background-color: $button-gray;
     }
   }
 }
