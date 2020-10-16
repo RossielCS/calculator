@@ -1,5 +1,4 @@
 import React from 'react';
-import { v4 as uuidv4 } from 'uuid';
 import Button from './Button';
 
 const buttonNames = [
@@ -14,18 +13,22 @@ const orangeButtons = [
   '÷', 'x', '-', '+',
 ];
 
+const keyList = [
+  'ed4b', 'fd9c', '62b6', '47c7', 'ad30',
+];
+
 const ButtonPanel = () => (
   <div className="button-panel">
-    {buttonNames.map(group => (
-      <div key={uuidv4()} className="board-row">
+    {buttonNames.map((group, i) => (
+      <div key={`row${keyList[i]}`} className="board-row">
         {group.map(element => {
           if (orangeButtons.includes(element)) {
-            return <Button key={uuidv4()} name={element} wide={false} />;
+            return <Button key={`btn${element}`} name={element} wide={false} />;
           }
           if (element === '0') {
-            return <Button key={uuidv4()} name={element} color="gray" wide />;
+            return <Button key={`btn${element}`} name={element} color="gray" wide />;
           }
-          return <Button key={uuidv4()} name={element} color="gray" wide={false} />;
+          return <Button key={`btn${element}`} name={element} color="gray" wide={false} />;
         })}
       </div>
     ))}
