@@ -24,7 +24,7 @@ class App extends React.Component {
 
   render() {
     const { total, next, operation } = this.state;
-    const dataToDisplay = [total, next, operation].filter(x => x).join('');
+    const dataToDisplay = [total, operation, next].filter(x => x).join('');
     return (
       <div className="app">
         <Display result={dataToDisplay.length ? dataToDisplay : '0'} />
