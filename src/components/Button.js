@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Button = ({
-  color, wide, buttonName, handleClick,
+  color, wide, buttonName, clickEvent,
 }) => (
   <button
     className={`button ${color} ${wide ? 'large' : 'small'}`}
     type="button"
-    onClick={() => handleClick(buttonName)}
+    onClick={() => clickEvent(buttonName)}
   >
     {buttonName}
   </button>
@@ -16,7 +16,7 @@ const Button = ({
 Button.propTypes = {
   wide: PropTypes.bool.isRequired,
   buttonName: PropTypes.string.isRequired,
-  handleClick: PropTypes.func.isRequired,
+  clickEvent: PropTypes.func.isRequired,
   color: PropTypes.string,
 };
 
