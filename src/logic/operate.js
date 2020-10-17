@@ -16,7 +16,9 @@ const operate = (numberOne, numberTwo, operation) => {
       result = new Big(numOne.times(numTwo));
       break;
     case '÷':
-      result = new Big(numOne.div(numTwo));
+      if (numTwo.toString() !== '0') {
+        result = new Big(numOne.div(numTwo));
+      }
       break;
     case '%':
       result = new Big(numOne.div(100).times(numTwo));

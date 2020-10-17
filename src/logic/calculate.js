@@ -33,7 +33,7 @@ const calculate = ({ total, next, operation }, buttonName) => {
     return { total, next: operate(next, '-1', 'x'), operation };
   }
 
-  if (buttonName === '=') {
+  if (buttonName === '=' && total && next) {
     return { total: operate(total, next, operation), next: null, operation: null };
   }
 
