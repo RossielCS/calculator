@@ -18,18 +18,18 @@ const keyList = [
   'ed4b', 'fd9c', '62b6', '47c7', 'ad30',
 ];
 
-const ButtonPanel = ({ clickHandler }) => (
+const ButtonPanel = ({ handleClick }) => (
   <div className="button-panel">
     {buttonNames.map((group, i) => (
       <div key={`row${keyList[i]}`} className="board-row">
         {group.map(element => {
           if (orangeButtons.includes(element)) {
-            return <Button key={`btn${element}`} buttonName={element} wide={false} clickEvent={clickHandler} />;
+            return <Button key={`btn${element}`} buttonName={element} wide={false} handleClick={handleClick} />;
           }
           if (element === '0') {
-            return <Button key={`btn${element}`} buttonName={element} color="gray" wide clickEvent={clickHandler} />;
+            return <Button key={`btn${element}`} buttonName={element} color="gray" wide handleClick={handleClick} />;
           }
-          return <Button key={`btn${element}`} buttonName={element} color="gray" wide={false} clickEvent={clickHandler} />;
+          return <Button key={`btn${element}`} buttonName={element} color="gray" wide={false} handleClick={handleClick} />;
         })}
       </div>
     ))}
@@ -37,7 +37,7 @@ const ButtonPanel = ({ clickHandler }) => (
 );
 
 ButtonPanel.propTypes = {
-  clickHandler: PropTypes.func.isRequired,
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default ButtonPanel;

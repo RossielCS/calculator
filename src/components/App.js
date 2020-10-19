@@ -28,7 +28,7 @@ class App extends React.Component {
     return (
       <div className="app">
         <Display result={dataToDisplay.length ? dataToDisplay : '0'} />
-        <ButtonPanel clickHandler={this.handleClick} />
+        <ButtonPanel handleClick={this.handleClick} />
       </div>
     );
   }
