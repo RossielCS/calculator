@@ -1,0 +1,63 @@
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+
+#root {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.app {
+  width: 700px;
+  margin: auto;
+
+  @include flex(column, center, center);
+}
+
+.display {
+  height: 100px;
+  width: 100%;
+  padding: 10px;
+
+  @include flex(row, flex-end, center);
+
+  color: #fff;
+  font-weight: bold;
+  font-size: 50px;
+  background-color: $display-color;
+}
+
+.button-panel {
+  @include flex(column, flex-end, center);
+
+  .board-row {
+    height: 100px;
+    width: 700px;
+    border-bottom: 1px solid $button-border;
+
+    .button {
+      height: 100%;
+      font-size: 20px;
+      font-weight: 700;
+      border: 1px solid $button-panel-color;
+    }
+
+    .small {
+      width: 25%;
+    }
+
+    .large {
+      width: 50%;
+    }
+
+    .orange {
+      background-color: $button-orange;
+    }
+
+    .gray {
+      background-color: $button-gray;
+    }
+  }
+}
