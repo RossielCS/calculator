@@ -11,22 +11,23 @@ The app design:<br />
 An important thing to notice is that they have asked for a product that is not just fully-functional, but also beautiful and user-friendly.
 
 ## Screenshot
-![screenshot](./app_screenshot.png)
-Additional description about the project and its features.
-
+<img src="src\assets\images\screenshot-01.png" alt="screenshot" width="500px"/>
 
 ## :hammer:  Built With
 
 - JavaScript,
 - NPM,
+- Nodejs
 - Yarn,
+- SASS,
+- [Bigjs](https://github.com/MikeMcl/big.js/)
 - React,
 - Visual Studio Code
 
 
 ## :earth_americas: Live Demo
 
-[Live Demo Link](https://livedemo.com)
+You can try it [here](https://rossielcs-calculator.herokuapp.com/).
 
 
 ## :computer: Getting Started
@@ -74,7 +75,14 @@ Instructions from [Heroku Buildpack](https://github.com/mars/create-react-app-bu
 `heroku open`
 
 ## :gem:  Features
+1. The user can do the following mathematical operations:
+    - Addition.
+    - Subtraction.
+    - Multiplication.
+    - Division.
+    - Percentage.
 
+2. It has an "AC" button for all clear.
 
 ## :woman:  Author
 
